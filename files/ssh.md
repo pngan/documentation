@@ -20,3 +20,7 @@
 - Give a title that indicates your window computer `My Laptop`
 - Paste the key into the text field, Click button `Add SSH Key`
 - Re-enter GitHub password when prompted on next screen 
+
+## Test Connection to GitHub from Windows
+- If you used the default key name `id_rsa` then test using `ssh -T git@github.com`
+- If you used a non-default key name then test using  `ssh -i <keyname>.pub -T git@github.com`
