@@ -42,3 +42,8 @@ These steps are needed to accept ssh connections from client machines in order t
 - On Windows, open a `Command Prompt`
 - Test using `ssh -T git@github.com`
 - You should receive a message like `Hi ! You've successfully authenticated, but GitHub does not provide shell access.`
+
+
+# Setup up ssh client on Linux
+
+# Setup up ssh server on Linux
