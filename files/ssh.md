@@ -29,7 +29,7 @@ These steps are needed to accept ssh connections from client machines in order t
 
 ## Deposit public key onto github.com website
 - On Windows, Print public key onto screen, 
-- `type c:\users\phillip\.ssh\id_ed25519.pub`
+- `type c:\users\<name>\.ssh\id_ed25519.pub`
 - Select and copy the output into your clipboard. Careful don't take anything extra.
 
 - Open your browser, and Login into your github account
