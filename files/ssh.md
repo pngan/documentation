@@ -10,10 +10,22 @@
 - `ssh-keygen -C "youremailaddressthatappearsingithub@example.com"` 
 - This should prompt you for a file name. You can accept the default `id_rsa` or if you have a one already with that name, you can choose a different name e.g. `c:\users\phillip\.ssh\id_rsa_github`
 - Press enter through the next two prompts.
-- Print public key onto screen, and select and copy the output into your clipboard. Careful don't take anything extra.
-- `type c:\users\phillip\.ssh\id_rsa_github.pub`
+If you used a non-default key name then test there is one further step.
+- `cd c:\user\<name>\.ssh`
+- In that folder create a text file called `config` (note no extension)
+- Put the following content into that file:
+```
+Host github.com
+    HostName github.com
+    User <your github account name>
+    IdentityFile c:\user\<name>\.ssh\<keyname>.pub
+```
 
 ## Deposit public key onto github.com website
+- On Windows, Print public key onto screen, 
+- `type c:\users\phillip\.ssh\id_rsa_github.pub`
+- Select and copy the output into your clipboard. Careful don't take anything extra.
+
 - Open your browser, and Login into your github account
 - Click on your Avatar in the top-right corner of the page
 - `Settings > SSH & GPG keys > New SSH key`
@@ -26,13 +38,4 @@
 - If you used a non-default key name then test using  `ssh -i <keyname>.pub -T git@github.com` (Replace `<keyname>` with the proper file name)
 - These should print out a message about being suceessfully authenticated.
 
-If you used a non-default key name then test there is one further step.
-- `cd c:\user\<name>\.ssh`
-- In that folder create a text file called `config` (note no extension)
-- Put the following content into that file:
-```
-Host github.com
-    HostName github.com
-    User <your github account name>
-    IdentityFile c:\user\<name>\.ssh\<keyname>.pub
-```
+
