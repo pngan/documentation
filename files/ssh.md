@@ -18,7 +18,7 @@ If you used a non-default key name then test there is one further step.
 Host github.com
     HostName github.com
     User <your github account name>
-    IdentityFile c:\user\<name>\.ssh\<keyname>.pub
+    IdentityFile c:\users\<name>\.ssh\<keyname>.pub
 ```
 
 ## Deposit public key onto github.com website
