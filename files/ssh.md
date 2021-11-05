@@ -23,4 +23,16 @@
 
 ## Test Connection to GitHub from Windows
 - If you used the default key name `id_rsa` then test using `ssh -T git@github.com`
-- If you used a non-default key name then test using  `ssh -i <keyname>.pub -T git@github.com`
+- If you used a non-default key name then test using  `ssh -i <keyname>.pub -T git@github.com` (Replace `<keyname>` with the proper file name)
+- These should print out a message about being suceessfully authenticated.
+
+If you used a non-default key name then test there is one further step.
+- `cd c:\user\<name>\.ssh`
+- In that folder create a text file called `config` (note no extension)
+- Put the following content into that file:
+```
+Host github.com
+    HostName github.com
+    User <your github account name>
+    IdentityFile c:\user\<name>\.ssh\<keyname>.pub
+```
