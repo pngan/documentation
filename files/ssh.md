@@ -24,6 +24,9 @@ Host github.com
     IdentityFile c:\users\<name>\.ssh\<keyname>
 ```
 # Set up ssh on GitHub.com
+
+These steps are needed to accept ssh connections from client machines in order to carry out git commands against the github repos.
+
 ## Deposit public key onto github.com website
 - On Windows, Print public key onto screen, 
 - `type c:\users\phillip\.ssh\id_ed25519.pub`
