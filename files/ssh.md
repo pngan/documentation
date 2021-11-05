@@ -1,5 +1,4 @@
-# Set up Windows to authenticate to GitHub using ssh
-
+# Set up ssh on Windows
 ## Prepare Windows
 ### Install ssh tools
 - `Settings > Apps & Features > Optional Features`
@@ -20,7 +19,7 @@ Host github.com
     User <your github account name>
     IdentityFile c:\users\<name>\.ssh\<keyname>     # Note *not* the .pub file
 ```
-
+# Set up ssh on GitHub.com
 ## Deposit public key onto github.com website
 - On Windows, Print public key onto screen, 
 - `type c:\users\phillip\.ssh\id_ed25519.pub`
