@@ -7,10 +7,10 @@
 
 ## Generate Public and Private Keys on Windows
 - Open a `Command Prompt` window
-- `ssh-keygen -C "youremailaddressthatappearsingithub@example.com"` 
-- This should prompt you for a file name. You can accept the default `id_rsa` or if you have a one already with that name, you can choose a different name e.g. `c:\users\phillip\.ssh\id_rsa_github`
-- Press enter through the next two prompts.
-If you used a non-default key name then test there is one further step.
+- `ssh-keygen -t ed25519 -C "4557674+pngan@users.noreply.github.com"` 
+- Press enter through the next three prompts.
+
+If you used a non-default key name then test there is one further step, otherwise skip to the next section
 - `cd c:\user\<name>\.ssh`
 - In that folder create a text file called `config` (note no extension)
 - Put the following content into that file:
@@ -23,7 +23,7 @@ Host github.com
 
 ## Deposit public key onto github.com website
 - On Windows, Print public key onto screen, 
-- `type c:\users\phillip\.ssh\id_rsa_github.pub`
+- `type c:\users\phillip\.ssh\id_ed25519.pub`
 - Select and copy the output into your clipboard. Careful don't take anything extra.
 
 - Open your browser, and Login into your github account
@@ -34,8 +34,4 @@ Host github.com
 - Re-enter GitHub password when prompted on next screen 
 
 ## Test Connection to GitHub from Windows
-- If you used the default key name `id_rsa` then test using `ssh -T git@github.com`
-- If you used a non-default key name then test using  `ssh -i <keyname>.pub -T git@github.com` (Replace `<keyname>` with the proper file name)
-- These should print out a message about being suceessfully authenticated.
-
-
+- Test using `ssh -T git@github.com`
