@@ -9,8 +9,7 @@ These steps are needed to connect set up an ssh client on a Windows machine so t
 
 ## Generate Public and Private Keys on Windows
 - Open a `Command Prompt` window
-- `ssh-keygen -t ed25519 -C "4557674+pngan@users.noreply.github.com"`  # Use your own email address that you want appearing in GitHub against your commits
-- Press enter through the next three prompts.
+- `ssh-keygen -t ed25519 -C "4557674+pngan@users.noreply.github.com"`  # Use the email address that you want appearing in GitHub. If not connecting to GitHub, you can leave the email part.
 - In the folder `cd c:\user\<name>\.ssh` there should be two new files for the private and public keys, `id_ed25519` and `id_ed25519.pub`.
 
 If you used a non-default key name then test there is one further step, otherwise skip to the next section
