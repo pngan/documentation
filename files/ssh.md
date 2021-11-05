@@ -35,3 +35,4 @@ Host github.com
 
 ## Test Connection to GitHub from Windows
 - Test using `ssh -T git@github.com`
+- You should receive a message like `Hi ! You've successfully authenticated, but GitHub does not provide shell access.`
