@@ -40,5 +40,6 @@ These steps are needed to accept ssh connections from client machines in order t
 - Re-enter GitHub password when prompted on next screen 
 
 ## Test Connection to GitHub
+- On Windows, open a `Command Prompt`
 - Test using `ssh -T git@github.com`
 - You should receive a message like `Hi ! You've successfully authenticated, but GitHub does not provide shell access.`
