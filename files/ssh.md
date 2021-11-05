@@ -35,6 +35,6 @@ Host github.com
 - Paste the key into the text field, Click button `Add SSH Key`
 - Re-enter GitHub password when prompted on next screen 
 
-## Test Connection to GitHub from Windows
+## Test Connection to GitHub
 - Test using `ssh -T git@github.com`
 - You should receive a message like `Hi ! You've successfully authenticated, but GitHub does not provide shell access.`
