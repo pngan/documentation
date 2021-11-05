@@ -35,7 +35,7 @@ These steps are needed to accept ssh connections from client machines in order t
 - Open your browser, and Login into your github account
 - Click on your Avatar in the top-right corner of the page
 - `Settings > SSH & GPG keys > New SSH key`
-- Give a title that indicates your window computer `My Laptop`
+- Give a title that indicates the machine you are connecting from, e.g. `My Laptop`
 - Paste the key into the text field, Click button `Add SSH Key`
 - Re-enter GitHub password when prompted on next screen 
 
