@@ -11,6 +11,7 @@ These steps are needed to connect to github.com using ssh from Windows. Or indee
 - Open a `Command Prompt` window
 - `ssh-keygen -t ed25519 -C "4557674+pngan@users.noreply.github.com"`  # Use your own email address that you want appearing in GitHub against your commits
 - Press enter through the next three prompts.
+- In the folder `cd c:\user\<name>\.ssh` there should be two new files for the private and public keys, `id_ed25519` and `id_ed25519.pub`.
 
 If you used a non-default key name then test there is one further step, otherwise skip to the next section
 - `cd c:\user\<name>\.ssh`
