@@ -18,4 +18,5 @@
 - Click on your Avatar in the top-right corner of the page
 - `Settings > SSH & GPG keys > New SSH key`
 - Give a title that indicates your window computer `My Laptop`
-- 
+- Paste the key into the text field, Click button `Add SSH Key`
+- Re-enter GitHub password when prompted on next screen 
