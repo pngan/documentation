@@ -1,4 +1,4 @@
-# Set up ssh on Windows
+# Set up ssh client on Windows
 ## Prepare Windows
 ### Install ssh tools
 - `Settings > Apps & Features > Optional Features`
