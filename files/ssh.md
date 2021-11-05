@@ -1,6 +1,6 @@
 # Set up ssh client on Windows
 
-These steps are needed to connect to github.com using ssh from Windows. Or indeed connecting to any ssh server.
+These steps are needed to connect set up an ssh client on a Windows machine so that you can connect to github.com using ssh, or any other ssh server.
 
 ## Prepare Windows
 ### Install ssh tools
