@@ -1,4 +1,4 @@
-# Set up Windows to authenticate to GitHub
+# Set up Windows to authenticate to GitHub using ssh
 
 ## Prepare Windows
 ### Install ssh tools
