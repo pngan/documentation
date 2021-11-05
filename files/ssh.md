@@ -16,12 +16,12 @@ These steps are needed to connect to github.com using ssh from Windows. Or indee
 If you used a non-default key name then test there is one further step, otherwise skip to the next section
 - `cd c:\user\<name>\.ssh`
 - In that folder create a text file called `config` (note no extension)
-- Put the following content into that file:
+- Put the following content into that file.  Note use the private key, *not* the .pub file
 ```
 Host github.com
     HostName github.com
     User <your github account name>
-    IdentityFile c:\users\<name>\.ssh\<keyname>     # Note *not* the .pub file
+    IdentityFile c:\users\<name>\.ssh\<keyname>
 ```
 # Set up ssh on GitHub.com
 ## Deposit public key onto github.com website
