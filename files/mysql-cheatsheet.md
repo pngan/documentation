@@ -5,7 +5,7 @@ mysql -u root -p   # Login into local mysql instance
 
 ```sql
 SHOW DATABASES;
-USE _DatabaseName_;
+USE DatabaseName;
 SHOW TABLES;
 SHOW FIELDS FROM table / DESCRIBE table;
 ```
