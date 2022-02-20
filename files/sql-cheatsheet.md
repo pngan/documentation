@@ -36,6 +36,9 @@ ORDER BY    TableName
             ,ColumnName;
 GO
 
+-- List Foreign Keys referencing a table
+EXEC sp_fkeys 'TableName'
+GO
 
 -- List Foreign Keys in database
 SELECT C.TABLE_CATALOG [PKTABLE_QUALIFIER], 
