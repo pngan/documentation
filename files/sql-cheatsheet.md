@@ -12,5 +12,19 @@ GO
 SET STATISTICS IO ON;
 GO
 
+
+-- Show table dependencies
+SELECT referencing_schema_name, referencing_entity_name,
+referencing_id, referencing_class_desc, is_caller_dependent
+FROM sys.dm_sql_referencing_entities ('app.user', 'OBJECT');
+GO
+-- OR
+
+sp_depends 'app.inventory'
+go
+
+
+
+
 ```
 
