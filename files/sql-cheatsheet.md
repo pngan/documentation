@@ -28,13 +28,16 @@ SELECT * FROM sys.tables WHERE name LIKE '%inve%'
 GO
 
 -- Find columns by name
-SELECT      COLUMN_NAME AS 'ColumnName'
+  SELECT      COLUMN_NAME AS 'ColumnName'
+            , TABLE_SCHEMA AS 'TableSchema'
             ,TABLE_NAME AS  'TableName'
 FROM        INFORMATION_SCHEMA.COLUMNS
-WHERE       COLUMN_NAME LIKE '%contact%'
-ORDER BY    TableName
+WHERE       COLUMN_NAME LIKE '%user_id%'
+ORDER BY    TableSchema,
+            TableName
             ,ColumnName;
 GO
+
 
 -- List Foreign Keys referencing a table
 EXEC sp_fkeys 'TableName'
